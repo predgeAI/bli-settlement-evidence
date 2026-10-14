@@ -22,7 +22,7 @@ verifiable evidence pack for lawyers and compliance teams, anchored on chain by 
   reads the pack status and logs the paper trade it would make.
 
 **Links (placeholders):**
-- GitHub: `https://github.com/<org>/predge-settlement-evidence` (TODO: push after review)
+- GitHub: https://github.com/predgeAI/bli-settlement-evidence
 - Demo video: `https://youtu.be/<id>` (TODO)
 - Sample evidence packs: `logs/pack-5219930.json`, `logs/pack-2241873.json` in the repo
 - Predge API: https://api.predge.io/v1/settlement-risk/2241873
@@ -144,7 +144,7 @@ market was settled. Built on Chainlink CRE. Predge."
 
 ## Before submitting (checklist)
 
-- [ ] Review the repo, then create the GitHub repo and push (not done; local commits only).
+- [x] Repo public: https://github.com/predgeAI/bli-settlement-evidence (14 Oct).
 - [ ] Optional: fund a throwaway Sepolia key, deploy the registry, run once with `--broadcast`, add
       the tx link to the README and here.
 - [ ] Record the video (2–3 min) and upload.
