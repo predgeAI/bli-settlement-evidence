@@ -1,0 +1,88 @@
+{
+  "kind": "predge-settlement-evidence-v1",
+  "status": "settled-differently",
+  "market": {
+    "platform": "polymarket",
+    "chain": "polygon",
+    "market_id": "2241873",
+    "condition_id": "0x4ba348328e4d4ddee9e6734c9a369b2e8138611651f9f6dc8f59dea51df6c734",
+    "uma_question_id": "0x30ebd10971cc044380ce6495e791828e9e0291fbb48550ca8be42149e1982791",
+    "adapter": "0x65070be91477460d8a7aeeb94ef92fe056c2f2a7",
+    "oracle": "0x2c0367a9db231ddebd88a94b4f6461a6e47c58b1"
+  },
+  "market_metadata_unsigned": {
+    "question": "Iran closes its airspace by May 24?",
+    "slug": "iran-closes-its-airspace-by-may-24",
+    "end_date": "2026-05-24T00:00:00Z",
+    "note": "Question text, slug and end date come from Polymarket metadata relayed by api.predge.io; they are not covered by the Predge signature."
+  },
+  "resolution_process": {
+    "uma_state": "settled",
+    "current_proposal": null,
+    "dispute_count": 2,
+    "disputes": [
+      {
+        "disputed_at": "2026-05-22T23:26:52Z",
+        "disputed_proposal": "Yes",
+        "tx": "0x537d7b36bbed683307f3df95766b90777c9377c77b2c61d517eae7bb3c220752"
+      },
+      {
+        "disputed_at": "2026-05-22T23:37:20Z",
+        "disputed_proposal": "Yes",
+        "tx": "0x8281a9d546c4f71b676b34e1657e6b58830a8447b68fef0e769f9e3bf331897a"
+      }
+    ],
+    "sent_to_uma_vote": true,
+    "paused": false,
+    "bulletin_board_count": 0,
+    "latest_bulletin_board_update": null
+  },
+  "outcome": {
+    "open_dispute": false,
+    "resolved_on_chain": true,
+    "final_outcome": "No",
+    "first_disputed_proposal": "Yes"
+  },
+  "predge_assessment": {
+    "risk_level": "resolved",
+    "recommendation": "resolved: the on-chain resolution is final (No); nothing is left to settle."
+  },
+  "polygon_ctf_check": {
+    "contract": "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045",
+    "outcome_slot_count": 2,
+    "payout_denominator": "1",
+    "payout_numerators": [
+      "0",
+      "1"
+    ],
+    "resolved_on_ctf": true,
+    "winning_outcome_indexes": [
+      1
+    ],
+    "resolution_state_agrees_with_record": true,
+    "outcome_label_check": "agrees",
+    "agrees_with_record": true,
+    "read_at": "last finalized Polygon block"
+  },
+  "provenance": {
+    "issuer": "predge.io",
+    "record_version": "predge-attest-v1",
+    "signer_kid": "13fa3d18a369e6c7",
+    "public_key": "13fa3d18a369e6c71bf941563ba47822b30182273d5106a0e8fb61c5016352d9",
+    "algorithm": "ed25519",
+    "signature": "5eb44cfecdb6e8d75902611c36a444cd11d24d196d7332c896f2887fa48c05f6ca04343f5f9c3a1859508e21378b42a5be044b1e4b9746f98f4aeffbe00b530e",
+    "content_hash": "0x6866c81b995582302261b57377de7da19fb621a1426d36499fc03d8ce06860cf",
+    "record_checked_at": "2026-10-14T13:25:19Z",
+    "record_issued_at": "2026-10-14T13:25:19.348Z",
+    "key_set": "https://api.predge.io/.well-known/predge-keys.json",
+    "canonicalization": "https://data.predge.io/canonicalization.md",
+    "signed_record_canonical": "{\"adapter\":\"0x65070be91477460d8a7aeeb94ef92fe056c2f2a7\",\"bulletin_board_count\":\"0\",\"chain\":\"polygon\",\"checked_at\":\"2026-10-14T13:25:19Z\",\"condition_id\":\"0x4ba348328e4d4ddee9e6734c9a369b2e8138611651f9f6dc8f59dea51df6c734\",\"current_proposal\":null,\"dispute_count\":\"2\",\"disputes\":[{\"disputed_at\":\"2026-05-22T23:26:52Z\",\"disputed_proposal\":\"Yes\",\"tx\":\"0x537d7b36bbed683307f3df95766b90777c9377c77b2c61d517eae7bb3c220752\"},{\"disputed_at\":\"2026-05-22T23:37:20Z\",\"disputed_proposal\":\"Yes\",\"tx\":\"0x8281a9d546c4f71b676b34e1657e6b58830a8447b68fef0e769f9e3bf331897a\"}],\"issued_at\":\"2026-10-14T13:25:19.348Z\",\"issuer\":\"predge.io\",\"kind\":\"settlement-risk\",\"latest_bulletin_board_update\":null,\"market_id\":\"2241873\",\"onchain_resolution\":{\"outcome\":\"No\"},\"open_dispute\":false,\"oracle\":\"0x2c0367a9db231ddebd88a94b4f6461a6e47c58b1\",\"paused\":false,\"platform\":\"polymarket\",\"recommendation\":\"resolved: the on-chain resolution is final (No); nothing is left to settle.\",\"resolved_on_chain\":true,\"risk_level\":\"resolved\",\"segment_dispute_rate\":{\"category\":\"politics\",\"ci95\":[\"0.010500\",\"0.012998\"],\"disputed\":\"333\",\"markets\":\"28502\",\"note\":\"Share of 2026 markets in this segment whose UMA resolution was disputed at least once. A segment statistic with a 95% Wilson interval, not a prediction for this market.\",\"rate\":\"0.011683\",\"segment\":\"politics\",\"sports_market_type\":\"none\",\"table\":\"segment-dispute-rate-2026-v1\",\"window\":\"Polymarket v1 UMA CTF adapter markets with scheduled end date 2026-01-01 to 2026-09-30, closed and resolved by 2026-10-02\"},\"sent_to_uma_vote\":true,\"settlement_estimate\":null,\"uma_question_id\":\"0x30ebd10971cc044380ce6495e791828e9e0291fbb48550ca8be42149e1982791\",\"uma_state\":\"settled\",\"version\":\"predge-attest-v1\"}",
+    "verified_by_every_node": [
+      "signer is the pinned Predge key",
+      "kid active in key set",
+      "ed25519 signature",
+      "sha256(canonical) == content_hash"
+    ]
+  },
+  "summary": "Polymarket market 2241873 (\"Iran closes its airspace by May 24?\"). The proposed answer \"Yes\" was disputed twice, first on 2026-05-22 23:26 UTC (tx 0x537d7b36…). The question was sent to a UMA token-holder vote. The market resolved on chain to \"No\", which differs from the disputed proposal \"Yes\". An independent read of the Polygon Conditional Tokens contract confirms the condition is resolved (payouts [0, 1] / 1). Source: Predge record signed with ed25519 key 13fa3d18a369e6c7, content hash 0x6866c81b995582302261b57377de7da19fb621a1426d36499fc03d8ce06860cf, checked against the chain at 2026-10-14 13:25 UTC. This pack records on-chain facts; it is not legal advice and not an opinion on the merits."
+}

@@ -1,0 +1,40 @@
+$ cre workflow simulate ./settlement-evidence --target staging-settings --non-interactive --trigger-index 0
+# run at 2026-10-14T13:25:20Z (UTC), CRE CLI v1.30.0. The simulator stamps log lines with local time (UTC+3) followed by Z.
+Initializing...
+Loading settings...
+Checking RPC connectivity...
+Compiling workflow...
+✓ Workflow compiled
+✓ Simulation limits enabled
+  HTTP: req=120kb resp=250kb timeout=10s | ConfHTTP: req=125kb resp=500kb timeout=1m30s | Consensus obs=25kb | ChainWrite evm_report=50kb evm_gas=10000000 solana_report=265b solana_cu=300000 | WASM binary=100mb compressed=20mb
+  Binary hash: e3fe4d2b5448d79fc5881213d679c7d87abf9089c8df3f34fd74ffa841c74c5e
+  Config hash: 296a496134f6a3c034409da0dec614e5adda54f0fe47f0a9f477117da0a3fef8
+2026-10-14T16:25:27Z [SIMULATION] Simulator Initialized
+
+2026-10-14T16:25:27Z [SIMULATION] Running trigger trigger=cron-trigger@1.0.0
+2026-10-14T16:25:28Z [USER LOG] [5219930] signed record verified on every node (pinned key 13fa3d18a369e6c7, key set, ed25519, sha256), consensus reached: uma_state=disputed open_dispute=true disputes=2 outcome=- content_hash=0x8e19d128ad9fbcf0d1e5f46309eb03d7f7c726a72f58ce2f005def04d22e4551
+2026-10-14T16:25:28Z [USER LOG] [5219930] Polygon CTF 0x4D97DCd97eC945f40cF65F87097ACe5EA0476045 condition 0x50d446794ad4e7b16e27e248ed841c76ca7edbb084907f61cd5a9d1f83cf96a8: slots=2 payoutDenominator=0 payoutNumerators=[0,0]
+2026-10-14T16:25:28Z [USER LOG] [5219930] evidence pack status=open-dispute pack_hash=0xb90d413d79745c1ec906e9c26c3edb0463327c56fe4fbf5e60449be8c8231dd7
+2026-10-14T16:25:28Z [USER LOG] [5219930] summary: Polymarket market 5219930 ("Will Trump say "Ammunition" this week?"). The proposed answer "No" was disputed twice, first on 2026-10-12 08:18 UTC (tx 0x7a19f69e…). The question was sent to a UMA token-holder vote. The question creator posted a clarification on the bulletin board on 2026-10-12 20:15 UTC. A dispute is open at the time of this record, so the outcome is not final and the market has not paid out. An independent read of the Polygon Conditional Tokens contract confirms the condition has not paid out (payout denominator 0). Source: Predge record signed with ed25519 key 13fa3d18a369e6c7, content hash 0x8e19d128ad9fbcf0d1e5f46309eb03d7f7c726a72f58ce2f005def04d22e4551, checked against the chain at 2026-10-14 13:25 UTC. This pack records on-chain facts; it is not legal advice and not an opinion on the merits.
+2026-10-14T16:25:28Z [USER LOG] [5219930] no receiver configured: report not written on chain
+2026-10-14T16:25:29Z [USER LOG] [2241873] signed record verified on every node (pinned key 13fa3d18a369e6c7, key set, ed25519, sha256), consensus reached: uma_state=settled open_dispute=false disputes=2 outcome=No content_hash=0x65d6f40b7139b3b2b46276013d3d6ec78777cc5f53e95ebc50ef96d87b854b96
+2026-10-14T16:25:30Z [USER LOG] [2241873] Polygon CTF 0x4D97DCd97eC945f40cF65F87097ACe5EA0476045 condition 0x4ba348328e4d4ddee9e6734c9a369b2e8138611651f9f6dc8f59dea51df6c734: slots=2 payoutDenominator=1 payoutNumerators=[0,1]
+2026-10-14T16:25:30Z [USER LOG] [2241873] evidence pack status=settled-differently pack_hash=0x19568e8f255506caafaea1873e6a857266cc8766427486b48b7a03af60971f13
+2026-10-14T16:25:30Z [USER LOG] [2241873] summary: Polymarket market 2241873 ("Iran closes its airspace by May 24?"). The proposed answer "Yes" was disputed twice, first on 2026-05-22 23:26 UTC (tx 0x537d7b36…). The question was sent to a UMA token-holder vote. The market resolved on chain to "No", which differs from the disputed proposal "Yes". An independent read of the Polygon Conditional Tokens contract confirms the condition is resolved (payouts [0, 1] / 1). Source: Predge record signed with ed25519 key 13fa3d18a369e6c7, content hash 0x65d6f40b7139b3b2b46276013d3d6ec78777cc5f53e95ebc50ef96d87b854b96, checked against the chain at 2026-10-14 13:25 UTC. This pack records on-chain facts; it is not legal advice and not an opinion on the merits.
+2026-10-14T16:25:30Z [USER LOG] [2241873] no receiver configured: report not written on chain
+
+✓ Workflow Simulation Result:
+"[{\"market_id\":\"5219930\",\"status\":\"open-dispute\",\"pack_hash\":\"0xb90d413d79745c1ec906e9c26c3edb0463327c56fe4fbf5e60449be8c8231dd7\",\"record_content_hash\":\"0x8e19d128ad9fbcf0d1e5f46309eb03d7f7c726a72f58ce2f005def04d22e4551\",\"summary\":\"Polymarket market 5219930 (\\\"Will Trump say \\\"Ammunition\\\" this week?\\\"). The proposed answer \\\"No\\\" was disputed twice, first on 2026-10-12 08:18 UTC (tx 0x7a19f69e…). The question was sent to a UMA token-holder vote. The question creator posted a clarification on the bulletin board on 2026-10-12 20:15 UTC. A dispute is open at the time of this record, so the outcome is not final and the market has not paid out. An independent read of the Polygon Conditional Tokens contract confirms the condition has not paid out (payout denominator 0). Source: Predge record signed with ed25519 key 13fa3d18a369e6c7, content hash 0x8e19d128ad9fbcf0d1e5f46309eb03d7f7c726a72f58ce2f005def04d22e4551, checked against the chain at 2026-10-14 13:25 UTC. This pack records on-chain facts; it is not legal advice and not an opinion on the merits.\"},{\"market_id\":\"2241873\",\"status\":\"settled-differently\",\"pack_hash\":\"0x19568e8f255506caafaea1873e6a857266cc8766427486b48b7a03af60971f13\",\"record_content_hash\":\"0x65d6f40b7139b3b2b46276013d3d6ec78777cc5f53e95ebc50ef96d87b854b96\",\"summary\":\"Polymarket market 2241873 (\\\"Iran closes its airspace by May 24?\\\"). The proposed answer \\\"Yes\\\" was disputed twice, first on 2026-05-22 23:26 UTC (tx 0x537d7b36…). The question was sent to a UMA token-holder vote. The market resolved on chain to \\\"No\\\", which differs from the disputed proposal \\\"Yes\\\". An independent read of the Polygon Conditional Tokens contract confirms the condition is resolved (payouts [0, 1] / 1). Source: Predge record signed with ed25519 key 13fa3d18a369e6c7, content hash 0x65d6f40b7139b3b2b46276013d3d6ec78777cc5f53e95ebc50ef96d87b854b96, checked against the chain at 2026-10-14 13:25 UTC. This pack records on-chain facts; it is not legal advice and not an opinion on the merits.\"}]"
+
+2026-10-14T16:25:30Z [SIMULATION] Execution finished signal received
+2026-10-14T16:25:30Z [SIMULATION] Skipping WorkflowEngineV2
+
+╭──────────────────────────────────────────────────────╮
+│ Simulation complete! Ready to deploy your workflow?  │
+│                                                      │
+│ Run cre account access to request deployment access. │
+╰──────────────────────────────────────────────────────╯
+
+⚠️  Update available! You’re running 1.30.0, but 1.38.0 is the latest.
+Run `cre update` or visit https://github.com/smartcontractkit/cre-cli/releases to upgrade.
+

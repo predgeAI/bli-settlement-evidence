@@ -1,0 +1,16 @@
+# CRE workflow settings for the Predge settlement evidence workflow.
+staging-settings:
+  user-workflow:
+    workflow-name: "predge-settlement-evidence-staging"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.staging.json"
+    secrets-path: ""
+
+production-settings:
+  user-workflow:
+    workflow-name: "predge-settlement-evidence"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.staging.json"
+    secrets-path: ""

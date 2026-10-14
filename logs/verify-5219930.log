@@ -1,0 +1,10 @@
+$ bun scripts/verify-pack.ts ../logs/pack-5219930.json --rpc https://polygon-bor-rpc.publicnode.com
+1. signed record: OK (key 13fa3d18a369e6c7, ed25519 verified, sha256 0x533d1b8bfab40bfd352c7febbf4a8d2ed04a82dba5f97ef3e982f23a5483d3b6)
+2. pack rebuilt from the signed record: identical
+3. pack_hash 0x6e3cb184263dd45beee06f7ced13dca80afa29ea2a7ff136f1ef9773091ba51b  status open-dispute
+4. Polygon now: payoutDenominator=0 (pack recorded 0)
+
+$ bun scripts/check-registry.ts ../logs/pack-5219930.json
+onReport from MockKeystoneForwarder: status 0x1, gasUsed 687361
+  EvidenceAnchored {"packHash":"0x6e3cb184263dd45beee06f7ced13dca80afa29ea2a7ff136f1ef9773091ba51b","conditionId":"0x50d446794ad4e7b16e27e248ed841c76ca7edbb084907f61cd5a9d1f83cf96a8","marketId":"5219930","status":1,"openDispute":true,"recordContentHash":"0x533d1b8bfab40bfd352c7febbf4a8d2ed04a82dba5f97ef3e982f23a5483d3b6","recordIssuedAt":"1791984310"}
+onReport from any other sender: status 0x0 (execution reverted)

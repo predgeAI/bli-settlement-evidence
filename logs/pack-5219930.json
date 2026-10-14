@@ -1,0 +1,90 @@
+{
+  "kind": "predge-settlement-evidence-v1",
+  "status": "open-dispute",
+  "market": {
+    "platform": "polymarket",
+    "chain": "polygon",
+    "market_id": "5219930",
+    "condition_id": "0x50d446794ad4e7b16e27e248ed841c76ca7edbb084907f61cd5a9d1f83cf96a8",
+    "uma_question_id": "0xe783aa7b45699f150009dd4dbfbce8dfec4b19ca86215ba4e0a76121f37a6dc3",
+    "adapter": "0x65070be91477460d8a7aeeb94ef92fe056c2f2a7",
+    "oracle": "0x2c0367a9db231ddebd88a94b4f6461a6e47c58b1"
+  },
+  "market_metadata_unsigned": {
+    "question": "Will Trump say \"Ammunition\" this week?",
+    "slug": "will-trump-say-ammunition-this-week-20261011",
+    "end_date": "2026-10-11T23:59:00Z",
+    "note": "Question text, slug and end date come from Polymarket metadata relayed by api.predge.io; they are not covered by the Predge signature."
+  },
+  "resolution_process": {
+    "uma_state": "disputed",
+    "current_proposal": null,
+    "dispute_count": 2,
+    "disputes": [
+      {
+        "disputed_at": "2026-10-12T08:18:58Z",
+        "disputed_proposal": "No",
+        "tx": "0x7a19f69e9d4c2e1b128b9a994b3367a957ef431af0380a364d840fa656fa3b74"
+      },
+      {
+        "disputed_at": "2026-10-12T09:12:26Z",
+        "disputed_proposal": "No",
+        "tx": "0x7c371b3029539f6dc060fb75a3c91b5036f05a1ad85efab8552acfe492daf590"
+      }
+    ],
+    "sent_to_uma_vote": true,
+    "paused": false,
+    "bulletin_board_count": 2,
+    "latest_bulletin_board_update": {
+      "kind": "clarification",
+      "posted_at": "2026-10-12T20:15:03Z",
+      "poster": "question_creator"
+    }
+  },
+  "outcome": {
+    "open_dispute": true,
+    "resolved_on_chain": false,
+    "final_outcome": null,
+    "first_disputed_proposal": "No"
+  },
+  "predge_assessment": {
+    "risk_level": "caution",
+    "recommendation": "caution: disputed twice, the outcome goes to a UMA token-holder vote, second dispute 52.2 h ago; median 88.5 h from a second dispute to on-chain resolution (Polymarket, 2026-01-01 to 2026-10-02). Latest bulletin-board update (clarification) 41.2 h ago."
+  },
+  "polygon_ctf_check": {
+    "contract": "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045",
+    "outcome_slot_count": 2,
+    "payout_denominator": "0",
+    "payout_numerators": [
+      "0",
+      "0"
+    ],
+    "resolved_on_ctf": false,
+    "winning_outcome_indexes": [],
+    "resolution_state_agrees_with_record": true,
+    "outcome_label_check": "not-checked",
+    "agrees_with_record": true,
+    "read_at": "last finalized Polygon block"
+  },
+  "provenance": {
+    "issuer": "predge.io",
+    "record_version": "predge-attest-v1",
+    "signer_kid": "13fa3d18a369e6c7",
+    "public_key": "13fa3d18a369e6c71bf941563ba47822b30182273d5106a0e8fb61c5016352d9",
+    "algorithm": "ed25519",
+    "signature": "819f7687a3477fbb9b66f0e6245c6d8c7b3b2962d4e4d424fd6b9ead94b3247f29af9d423ff7e087a0ecd46a197b0a13bb99ea729c9d3ebb4ae868d52c73130f",
+    "content_hash": "0x533d1b8bfab40bfd352c7febbf4a8d2ed04a82dba5f97ef3e982f23a5483d3b6",
+    "record_checked_at": "2026-10-14T13:25:09Z",
+    "record_issued_at": "2026-10-14T13:25:10.797Z",
+    "key_set": "https://api.predge.io/.well-known/predge-keys.json",
+    "canonicalization": "https://data.predge.io/canonicalization.md",
+    "signed_record_canonical": "{\"adapter\":\"0x65070be91477460d8a7aeeb94ef92fe056c2f2a7\",\"bulletin_board_count\":\"2\",\"chain\":\"polygon\",\"checked_at\":\"2026-10-14T13:25:09Z\",\"condition_id\":\"0x50d446794ad4e7b16e27e248ed841c76ca7edbb084907f61cd5a9d1f83cf96a8\",\"current_proposal\":null,\"dispute_count\":\"2\",\"disputes\":[{\"disputed_at\":\"2026-10-12T08:18:58Z\",\"disputed_proposal\":\"No\",\"tx\":\"0x7a19f69e9d4c2e1b128b9a994b3367a957ef431af0380a364d840fa656fa3b74\"},{\"disputed_at\":\"2026-10-12T09:12:26Z\",\"disputed_proposal\":\"No\",\"tx\":\"0x7c371b3029539f6dc060fb75a3c91b5036f05a1ad85efab8552acfe492daf590\"}],\"issued_at\":\"2026-10-14T13:25:10.797Z\",\"issuer\":\"predge.io\",\"kind\":\"settlement-risk\",\"latest_bulletin_board_update\":{\"kind\":\"clarification\",\"posted_at\":\"2026-10-12T20:15:03Z\",\"poster\":\"question_creator\"},\"market_id\":\"5219930\",\"onchain_resolution\":null,\"open_dispute\":true,\"oracle\":\"0x2c0367a9db231ddebd88a94b4f6461a6e47c58b1\",\"paused\":false,\"platform\":\"polymarket\",\"recommendation\":\"caution: disputed twice, the outcome goes to a UMA token-holder vote, second dispute 52.2 h ago; median 88.5 h from a second dispute to on-chain resolution (Polymarket, 2026-01-01 to 2026-10-02). Latest bulletin-board update (clarification) 41.2 h ago.\",\"resolved_on_chain\":false,\"risk_level\":\"caution\",\"segment_dispute_rate\":{\"category\":\"politics\",\"ci95\":[\"0.010500\",\"0.012998\"],\"disputed\":\"333\",\"markets\":\"28502\",\"note\":\"Share of 2026 markets in this segment whose UMA resolution was disputed at least once. A segment statistic with a 95% Wilson interval, not a prediction for this market.\",\"rate\":\"0.011683\",\"segment\":\"politics\",\"sports_market_type\":\"none\",\"table\":\"segment-dispute-rate-2026-v1\",\"window\":\"Polymarket v1 UMA CTF adapter markets with scheduled end date 2026-01-01 to 2026-09-30, closed and resolved by 2026-10-02\"},\"sent_to_uma_vote\":true,\"settlement_estimate\":{\"basis\":\"reference_rate\",\"evaluation\":null,\"inputs\":{\"category\":\"politics\",\"disputed_at\":\"2026-10-12T08:18:58Z\",\"disputed_proposal\":\"No\",\"price_of_outcome_0_3h_before_dispute\":null,\"price_of_outcome_0_before_dispute\":null,\"price_source\":null},\"model\":\"settlement-estimate-v1\",\"note\":\"Disputed twice, so the outcome goes to a UMA token-holder vote. The model is fitted at the first dispute only; the figure is the share of twice-disputed 2026 markets that settled differently from the disputed proposal, with a 95% Wilson interval. Statistical estimate from 2026 Polymarket disputes, not advice and not a statement about this market's merits. It uses the market price before the dispute, the adapter, the market type and duration; nothing after the first dispute.\",\"reference\":{\"ci95\":[\"0.1746\",\"0.2654\"],\"markets\":\"314\",\"rate\":\"0.2166\",\"settled_differently\":\"68\",\"window\":\"disputes raised 2026-01-01 to 2026-10-02, settled markets\"},\"settles_differently_probability\":\"0.2166\",\"stage\":\"uma_vote\",\"trained_on\":\"disputes first raised 2026-01-01 to 2026-06-30, isotonic calibration on 2026-07\"},\"uma_question_id\":\"0xe783aa7b45699f150009dd4dbfbce8dfec4b19ca86215ba4e0a76121f37a6dc3\",\"uma_state\":\"disputed\",\"version\":\"predge-attest-v1\"}",
+    "verified_by_every_node": [
+      "signer is the pinned Predge key",
+      "kid active in key set",
+      "ed25519 signature",
+      "sha256(canonical) == content_hash"
+    ]
+  },
+  "summary": "Polymarket market 5219930 (\"Will Trump say \"Ammunition\" this week?\"). The proposed answer \"No\" was disputed twice, first on 2026-10-12 08:18 UTC (tx 0x7a19f69e…). The question was sent to a UMA token-holder vote. The question creator posted a clarification on the bulletin board on 2026-10-12 20:15 UTC. A dispute is open at the time of this record, so the outcome is not final and the market has not paid out. An independent read of the Polygon Conditional Tokens contract confirms the condition has not paid out (payout denominator 0). Source: Predge record signed with ed25519 key 13fa3d18a369e6c7, content hash 0x533d1b8bfab40bfd352c7febbf4a8d2ed04a82dba5f97ef3e982f23a5483d3b6, checked against the chain at 2026-10-14 13:25 UTC. This pack records on-chain facts; it is not legal advice and not an opinion on the merits."
+}

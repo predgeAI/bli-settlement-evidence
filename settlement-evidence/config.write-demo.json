@@ -1,0 +1,16 @@
+{
+  "schedule": "0 0 */6 * * *",
+  "apiBase": "https://api.predge.io",
+  "marketIds": ["5219930", "2241873"],
+  "predgePublicKey": "13fa3d18a369e6c71bf941563ba47822b30182273d5106a0e8fb61c5016352d9",
+  "checkKeySet": true,
+  "read": {
+    "chainSelectorName": "polygon-mainnet",
+    "ctfContract": "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"
+  },
+  "write": {
+    "chainSelectorName": "ethereum-testnet-sepolia",
+    "receiverAddress": "0x000000000000000000000000000000000000bEEF",
+    "gasLimit": "1000000"
+  }
+}

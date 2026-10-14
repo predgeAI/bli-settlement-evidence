@@ -1,0 +1,6 @@
+{
+  "name": "settlement-evidence-contracts",
+  "private": true,
+  "type": "module",
+  "dependencies": { "solc": "0.8.26", "ethers": "6.17.0" }
+}
