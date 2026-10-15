@@ -8,6 +8,8 @@ differs from the disputed answer. It carries a plain-English summary. Every fact
 signed record that every DON node verifies, and is cross-checked against the Polygon contract that
 pays the market out. The pack's sha256 is written on chain by a DON-signed report.
 
+**Demo video (2:38):** https://youtu.be/FGhs-qcKPHE
+
 ## The problem
 
 Prediction-market outcomes are settled by an optimistic oracle: someone proposes an answer, anyone

@@ -23,7 +23,7 @@ verifiable evidence pack for lawyers and compliance teams, anchored on chain by 
 
 **Links (placeholders):**
 - GitHub: https://github.com/predgeAI/bli-settlement-evidence
-- Demo video: `https://youtu.be/<id>` (TODO)
+- Demo video: https://youtu.be/FGhs-qcKPHE
 - Sample evidence packs: `logs/pack-5219930.json`, `logs/pack-2241873.json` in the repo
 - Predge API: https://api.predge.io/v1/settlement-risk/2241873
 - Predge key set: https://api.predge.io/.well-known/predge-keys.json
